@@ -4,7 +4,7 @@ import axios from "axios";
 const Slot = ({ slot, userName, date }) => {
   const handleBooking = async () => {
     try {
-      const response = await axios.post("https://appointment-booking-backend-mu.vercel.app//api/bookSlot", {
+      const response = await axios.post("https://appointment-booking-backend-l1mfv6cd5-omprakash-umaths-projects.vercel.app/api/bookSlot", {
         date,
         time: slot.time,
         userId: userName,
