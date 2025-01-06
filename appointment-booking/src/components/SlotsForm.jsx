@@ -19,7 +19,7 @@ const SlotsForm = () => {
   const fetchSlots = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`https://appointment-booking-backend-l1mfv6cd5-omprakash-umaths-projects.vercel.app/api/slots?date=${selectedDate}`);
+      const response = await axios.get(`api/slots?date=${selectedDate}`);
       setSlots(response.data);
     } catch (error) {
       alert("Error fetching slots");
